@@ -27,9 +27,9 @@ oppo_reno_test
     Click Text    密码登录
     Wait Until Page Contains Element    xpath=//*[@text='请输入手机号码']    10s
     Click Element    xpath=//*[@text='请输入手机号码']
-    Input Value    xpath=//*[@text='请输入手机号码']    18664252074
+    Input Value    xpath=//*[@text='请输入手机号码']    0000000
     Click Element    xpath=//*[@text='请输入密码']
-    Input Value    xpath=//*[@text='请输入密码']    midea123456
+    Input Value    xpath=//*[@text='请输入密码']    *****
     Click Element    id=com.midea.ai.appliances:id/cb
     Click Element    id=com.midea.ai.appliances:id/btn_login
 
