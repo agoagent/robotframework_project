@@ -1,0 +1,36 @@
+command: robot -A C:\Users\goagent\AppData\Local\Temp\RIDE177p_tdm.d\argfile.txt --listener C:\Users\goagent\AppData\Local\Programs\Python\Python37-32\lib\site-packages\robotide\contrib\testrunner\TestRunnerAgent.py:5230:False D:\work\robot_auto\project
+
+TestRunnerAgent: Running under CPython 3.7.5
+
+======================================================================================================================================
+Project                                                                                                                               
+======================================================================================================================================
+Project.InterfaceTest                                                                                                                 
+======================================================================================================================================
+
+Project.InterfaceTest.Test                                                                                                            
+======================================================================================================================================
+
+\xd7\xa2\xb2\xe1\xbd\xd3\xbf\xda-post                                                                                                                 | PASS |
+--------------------------------------------------------------------------------------------------------------------------------------
+Project.InterfaceTest.Test                                                                                                    | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+======================================================================================================================================
+Project.InterfaceTest                                                                                                         | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+======================================================================================================================================
+Project                                                                                                                       | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+======================================================================================================================================
+Debug:   D:\work\robot_auto\project\InterfaceTest\Log\Project-Message-20201227-133556.log
+Output:  D:\work\robot_auto\project\InterfaceTest\Log\Project-Output-20201227-133556.xml
+Log:     D:\work\robot_auto\project\InterfaceTest\Log\Project-Log-20201227-133556.html
+
+Report:  D:\work\robot_auto\project\InterfaceTest\Log\Project-Report-20201227-133556.html
+
+
+
+Test finished 20201227 13:35:57

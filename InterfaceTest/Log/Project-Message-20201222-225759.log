@@ -1,0 +1,67 @@
+==============================================================================
+20201222 22:57:59.840 - INFO - + START SUITE: Project [ ]
+==============================================================================
+20201222 22:57:59.840 - INFO - +- START SUITE: Project.InterfaceTest [ ]
+==============================================================================
+20201222 22:57:59.918 - INFO - +-- START SUITE: Project.InterfaceTest.Test [ ]
+==============================================================================
+20201222 22:57:59.934 - INFO - +--- START TEST: 注册接口-post [ ]
+------------------------------------------------------------------------------
+20201222 22:57:59.934 - INFO - +---- START KW: BuiltIn.Create Dictionary [ Content-Type=application/x-www-form-urlencoded ]
+20201222 22:57:59.934 - INFO - &{header} = { Content-Type=application/x-www-form-urlencoded }
+20201222 22:57:59.934 - INFO - +---- END KW: BuiltIn.Create Dictionary (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.934 - INFO - +---- START KW: RequestsLibrary.Create Session [ nmb | http://test.lemonban.com | headers=${header} ]
+20201222 22:57:59.934 - INFO - Creating Session using : alias=nmb, url=http://test.lemonban.com, headers={'Content-Type': 'application/x-www-form-urlencoded'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
+20201222 22:57:59.934 - DEBUG - Creating session: nmb
+20201222 22:57:59.934 - DEBUG - Argument types are:
+<class 'bool'>
+20201222 22:57:59.934 - INFO - +---- END KW: RequestsLibrary.Create Session (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.934 - INFO - +---- START KW: BuiltIn.Create Dictionary [ username=18688710213 | passwd=fe7ead29e825e0463d9d8fca37ee42f5 ]
+20201222 22:57:59.934 - INFO - &{data} = { username=18688710213 | passwd=fe7ead29e825e0463d9d8fca37ee42f5 }
+20201222 22:57:59.934 - INFO - +---- END KW: BuiltIn.Create Dictionary (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.934 - INFO - +---- START KW: RequestsLibrary.Post Request [ nmb | ningmengban/mvc/user/register.json ]
+20201222 22:57:59.996 - INFO - POST Request : url=http://test.lemonban.com/ningmengban/mvc/user/register.json 
+ path_url=/ningmengban/mvc/user/register.json 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '0'} 
+ body=None
+20201222 22:57:59.996 - INFO - POST Response : url=http://test.lemonban.com/ningmengban/mvc/user/register.json 
+ status=200, reason=OK 
+ body={"success":true,"message":"注册成功","content":null,"object":null}
+20201222 22:57:59.996 - INFO - ${resp} = <Response [200]>
+20201222 22:57:59.996 - INFO - +---- END KW: RequestsLibrary.Post Request (62)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.996 - INFO - +---- START KW: BuiltIn.Log [ ${resp.status_code} ]
+20201222 22:57:59.996 - INFO - 200
+20201222 22:57:59.996 - INFO - +---- END KW: BuiltIn.Log (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.996 - INFO - +---- START KW: BuiltIn.Log [ ${resp.text} ]
+20201222 22:57:59.996 - INFO - {"success":true,"message":"注册成功","content":null,"object":null}
+20201222 22:57:59.996 - INFO - +---- END KW: BuiltIn.Log (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.996 - INFO - +---- START KW: BuiltIn.Log [ ${resp.json()} ]
+20201222 22:57:59.996 - INFO - {'success': True, 'message': '注册成功', 'content': None, 'object': None}
+20201222 22:57:59.996 - INFO - +---- END KW: BuiltIn.Log (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.996 - INFO - +---- START KW: BuiltIn.Should Be Equal As Strings [ ${resp.text} | {"success":true,"message":"注册成功","content":null,"object":null} ]
+20201222 22:57:59.996 - DEBUG - Argument types are:
+<type 'unicode'>
+<type 'unicode'>
+20201222 22:57:59.996 - INFO - +---- END KW: BuiltIn.Should Be Equal As Strings (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201222 22:57:59.996 - INFO - +---- START KW: BuiltIn.Should Be Equal As Strings [ 注册成功 | ${resp.json()["message"]} ]
+20201222 22:58:00.012 - DEBUG - Argument types are:
+<type 'unicode'>
+<type 'unicode'>
+20201222 22:58:00.012 - INFO - +---- END KW: BuiltIn.Should Be Equal As Strings (16)
+------------------------------------------------------------------------------
+20201222 22:58:00.012 - INFO - +--- END TEST: 注册接口-post (94)
+------------------------------------------------------------------------------
+20201222 22:58:00.012 - INFO - +-- END SUITE: Project.InterfaceTest.Test (172)
+==============================================================================
+20201222 22:58:00.028 - INFO - +- END SUITE: Project.InterfaceTest (172)
+==============================================================================
+20201222 22:58:00.028 - INFO - + END SUITE: Project (219)
+==============================================================================
